@@ -1,0 +1,52 @@
+
+
+#include <iostream>
+using namespace std;
+
+void fasele(int n)
+{
+    for(int i=1;i<=n;i++)
+    cout<<" ";
+    return;
+}
+//---------------------
+int main(){
+    double n;
+    cin>>n;
+    if(true){ /// adad fard
+        n/=2;
+        n+=0.5;
+        int a=n,b=n-1,c=n-1;
+        for(int i=1;i<=2*n-1;i+=2){
+        fasele(a-1);
+        for(int j=1;j<=i;j++)
+        cout<<"*";
+        fasele(b);
+        fasele(c);
+        for(int k=1;k<=i;k++){
+        
+        cout<<"*";}
+        cout<<endl;
+        a--;
+        b--;
+        c--;
+        }
+        int d=2,e=1,f=1;
+        for(int i=2*n-3;i>=1;i-=2){
+        fasele(d-1);
+        for(int j=1;j<=i;j++)
+        cout<<"*";
+        fasele(e);
+        fasele(f);
+        for(int k=1;k<=i;k++)
+        cout<<"*";
+        cout<<endl;
+        e++;
+        f++;
+        d++;
+        }
+    }
+    else{
+        ///// zoj nabayad bashad
+    }
+}
